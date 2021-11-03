@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+/* a container for header logo and header links */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* targets header logo children */
+.logo {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+/* ul and a grabs the header links from one to three */
+ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 32px;
+}
+
+/* ul and a grabs the header links from one to three */
+a {
+  text-decoration: none;
+  color: #F9FAF8;
+}
+
+/* this is where "This website is awesome" container starts*/
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.maintext {
+  font-size: 48px;
+  font-weight: extra-bold;
+}
