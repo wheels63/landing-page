@@ -4,11 +4,9 @@ body {
   margin: 0;
   background-color: #1F2937;
   color: #F9FAF8;
-  gap: 16px;
+  /* gap: 16px; */
   font-family:Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  /* justify-content: space-around; */
-  /* align-items: center; */
 }
 
 /* a container for header logo and header links */
@@ -46,10 +44,12 @@ a {
 /* this is where "This website is awesome" container starts*/
 .container1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .left1 {
@@ -79,15 +79,112 @@ a {
 }
 
 img {
-  max-width:50%;
-  /* max-height:100%; */
-  height: auto;
+  max-width: 40%;
+  max-height: 40%;
 }
 
+/* this is where container2 starts */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+
+.container2-text {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.container2-boxes {
+  display: flex;
+  color: #1F2937;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+}
+
+.container2 img {
+  max-width: 70%;
+  max-height: 70%;
+  /* margin-bottom: 26px; */
+}
+
+/* this is where the gray quote box starts */
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  font-size: 36px;
+  color: #1F2937;
+  margin: 0px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 66px;
+  justify-content: space-around;
+}
+
+#quoter {
+  font-weight: 800;
+  align-self: flex-end;
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+/* call to action - sign up page */
+
+.container4 {
+  background-color: white;
+  padding: 64px 72px 62px 72px;
+}
+
+.container4-box {
+  display: flex;
+  background-color: #3882F6;
+  padding: 64px 72px 62px 72px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container4-box-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.action {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.container4-box-signup {
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: #3882F6;
+  border: 1px solid white;
+  color: white;
+  width: 120px;
+  font-weight: bold;
+}
 
 footer {
   display: flex;
-  height: 72px;
+  height: 120px;
   justify-content: center;
   align-items: center;
 }
