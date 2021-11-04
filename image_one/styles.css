@@ -4,6 +4,11 @@ body {
   margin: 0;
   background-color: #1F2937;
   color: #F9FAF8;
+  gap: 16px;
+  font-family:Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  /* justify-content: space-around; */
+  /* align-items: center; */
 }
 
 /* a container for header logo and header links */
@@ -34,16 +39,55 @@ ul {
 /* ul and a grabs the header links from one to three */
 a {
   text-decoration: none;
-  color: #F9FAF8;
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 /* this is where "This website is awesome" container starts*/
 .container1 {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.left1 {
+  display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .maintext {
   font-size: 48px;
-  font-weight: extra-bold;
+  font-weight: 800; 
+}
+
+.subtext {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.signup {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #3882F6;
+  border: 1px solid #3882F6;
+  color: white;
+  width: 25%;
+  font-weight: bold;
+}
+
+img {
+  max-width:50%;
+  /* max-height:100%; */
+  height: auto;
+}
+
+
+footer {
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
 }
